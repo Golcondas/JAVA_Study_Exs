@@ -8,7 +8,7 @@ public class RectangleDemo {
 		rectangle.length=10;
 		rectangle.setWidth(20);
 		
-		System.out.println("长方形面积是："+rectangle.area());
+		System.out.println("长方形面积是："+rectangle.area(rectangle.length,rectangle.getWidth()));
 	}
 
 }

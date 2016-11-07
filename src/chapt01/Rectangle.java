@@ -16,7 +16,13 @@ public class Rectangle {
 		this.width = width;
 	}
 	
-	public double area(){
-		return this.length*this.width;
+	/**
+	 * 面积
+	 * @param length 长度
+	 * @param width 宽度
+	 * @return
+	 */
+	public double area(double length,double width){
+		return length*width;
 	}
 }
