@@ -11,11 +11,18 @@ public class ReadLine {
 		// for (int i = 0; i < b.length; i++) {
 		// System.out.println("输出了结果"+i+":"+b[i]);
 		// }
-		Scanner sc = new Scanner(System.in);
-		System.out.print("输入一行字符然后按回车键:");
-		String s=sc.nextLine();
-		System.out.print("您的输入是: " + s);
-		//sc.close();
+		System.out.println("你可以输入y结束:");
+		while (true) {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("输入一行字符然后按回车键:");
+			String s=sc.next();
+			if(s.equals("y")){
+				System.out.println("结束运行");
+				sc.close();
+				return;
+			}
+			System.out.println("您的输入是: " + s.toUpperCase());
+		}
 	}
 
 }
