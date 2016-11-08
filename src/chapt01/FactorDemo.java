@@ -12,8 +12,14 @@ public class FactorDemo {
 		System.out.println("递归方法!10："+factor(a)+'\n'+gongShi);
 	}
 	
+	/**
+	 * 递归
+	 * @param c 传值
+	 * @return
+	 */
 	static int factor(int c){
 		if(c<=1){
+			gongShi+="*"+1;
 			return 1;
 		}else{
 			int b=c-1;
